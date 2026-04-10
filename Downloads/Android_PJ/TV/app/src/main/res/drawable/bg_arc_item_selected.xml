@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- 選中的弧形選單項目：橘色實心圓 -->
-<shape xmlns:android="http://schemas.android.com/apk/res/android"
-    android:shape="oval">
-    <solid android:color="#FFDD4400" />
-    <size android:width="72dp" android:height="72dp" />
-</shape>
