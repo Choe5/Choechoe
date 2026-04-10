@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c ':*)",
+      "Bash(python3 -c \"import zipfile, xml.etree.ElementTree as ET; z=zipfile.ZipFile\\('/c/Users/Choe/Downloads/Android_PJ/TV/Android TV Launcher 開發文件.docx'\\); f=z.open\\('word/document.xml'\\); tree=ET.parse\\(f\\); ns='{http://schemas.openxmlformats.org/wordprocessingml/2006/main}'; texts=[\\(''.join\\([r.text for r in p.iter\\(ns+'t'\\) if r.text]\\)\\) for p in tree.iter\\(ns+'p'\\)]; print\\('\\\\n'.join\\(t for t in texts if t\\)\\)\")",
+      "Bash(python3)",
+      "Bash(py -c \"from PIL import Image; print\\('Pillow OK'\\)\")",
+      "Bash(pip install:*)",
+      "Bash(py -c \"from PIL import Image; print\\('OK'\\)\")",
+      "Bash(py)",
+      "Bash(grep -E \"^bg[0-9]+\\\\.jpg$\")"
+    ]
+  }
+}

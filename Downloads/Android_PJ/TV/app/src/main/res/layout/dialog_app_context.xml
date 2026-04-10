@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    長按 APP icon 後跳出的上下文選單
+    佈局：底部浮層，4 個圓形按鈕橫排 + 標籤
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingTop="32dp"
+    android:paddingBottom="32dp"
+    android:background="#AA000000">
+
+    <!-- 4 個圓形按鈕橫排 -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- 1. 刪除 (藍色) -->
+        <LinearLayout
+            android:id="@+id/btnCtxDelete"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:focusable="true"
+            android:clickable="true">
+
+            <TextView
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:gravity="center"
+                android:text="🗑"
+                android:textSize="28sp"
+                android:background="@drawable/bg_ctx_btn_blue" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="刪除 APP"
+                android:textColor="#FFFFFFFF"
+                android:textSize="13sp"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <!-- 2. 設為影片捷徑 (橘色) -->
+        <LinearLayout
+            android:id="@+id/btnCtxVideo"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:focusable="true"
+            android:clickable="true"
+            android:layout_marginStart="16dp">
+
+            <TextView
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:gravity="center"
+                android:text="▶"
+                android:textSize="28sp"
+                android:textColor="#FFFFFFFF"
+                android:background="@drawable/bg_ctx_btn_orange" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="設為影片播放"
+                android:textColor="#FFFFFFFF"
+                android:textSize="13sp"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <!-- 3. 設為音樂捷徑 (黃色) -->
+        <LinearLayout
+            android:id="@+id/btnCtxMusic"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:focusable="true"
+            android:clickable="true"
+            android:layout_marginStart="16dp">
+
+            <TextView
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:gravity="center"
+                android:text="♪"
+                android:textSize="30sp"
+                android:textColor="#FFFFFFFF"
+                android:background="@drawable/bg_ctx_btn_yellow" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="設為音樂播放"
+                android:textColor="#FFFFFFFF"
+                android:textSize="13sp"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <!-- 4. 返回 (深灰) -->
+        <LinearLayout
+            android:id="@+id/btnCtxBack"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:focusable="true"
+            android:clickable="true"
+            android:layout_marginStart="16dp">
+
+            <TextView
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:gravity="center"
+                android:text="↩"
+                android:textSize="28sp"
+                android:textColor="#FFFFFFFF"
+                android:background="@drawable/bg_ctx_btn_gray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="返回"
+                android:textColor="#FFFFFFFF"
+                android:textSize="13sp"
+                android:gravity="center" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialogRoot"
+    android:layout_width="480dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="32dp"
+    android:gravity="center"
+    android:background="@drawable/bg_about_dialog">
+
+    <!-- 標題 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ArcFlow TV"
+        android:textColor="#FF00BFFF"
+        android:textSize="28sp"
+        android:fontFamily="sans-serif-light"
+        android:letterSpacing="0.12" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Launcher"
+        android:textColor="#AAFFFFFF"
+        android:textSize="14sp"
+        android:layout_marginBottom="24dp" />
+
+    <!-- 分隔線 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#4400BFFF"
+        android:layout_marginBottom="20dp" />
+
+    <!-- 資訊 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="版本  1.0.0"
+        android:textColor="#CCFFFFFF"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="極簡 · 流暢 · 沉浸式 Android TV 桌面"
+        android:textColor="#88FFFFFF"
+        android:textSize="13sp"
+        android:layout_marginTop="6dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="開發者：Choe"
+        android:textColor="#88FFFFFF"
+        android:textSize="13sp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="28dp" />
+
+    <!-- 確定按鈕 -->
+    <Button
+        android:id="@+id/btnAboutOk"
+        android:layout_width="160dp"
+        android:layout_height="44dp"
+        android:text="確定"
+        android:textColor="#FFFFFFFF"
+        android:background="@drawable/bg_apply_btn"
+        android:focusable="true" />
+
+</LinearLayout>

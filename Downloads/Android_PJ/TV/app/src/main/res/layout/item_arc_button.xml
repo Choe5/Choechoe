@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 弧形選單單一按鈕：純圓形 icon，標籤由 ArcMenuLayout 統一管理 -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="72dp"
+    android:layout_height="72dp"
+    android:focusable="true"
+    android:clickable="true"
+    android:elevation="4dp">
+
+    <TextView
+        android:id="@+id/tvArcIcon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="28sp"
+        android:includeFontPadding="false"
+        android:textColor="#FFFFFFFF"
+         />
+
+</FrameLayout>

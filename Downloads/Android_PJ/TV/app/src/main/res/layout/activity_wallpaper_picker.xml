@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 毛玻璃背景 -->
+    <ImageView
+        android:id="@+id/ivFrostedBg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:contentDescription="@null" />
+
+    <!-- 暗色遮罩 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99000000" />
+
+    <!-- 主體內容 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- ── 頂部標題列 ── -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:background="#33000000">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="桌布相簿"
+                android:textColor="#FFFFFFFF"
+                android:textSize="22sp"
+                android:fontFamily="sans-serif-medium" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnApply"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="套用"
+                    android:textColor="#FFFFFFFF"
+                    android:background="@drawable/bg_apply_btn"
+                    android:textSize="14sp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:focusable="true" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- ── 主內容：縮圖網格 ── -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvWallpapers"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:clipToPadding="false"
+            android:scrollbars="vertical"
+            android:focusable="true"
+            android:descendantFocusability="afterDescendants" />
+
+        <!-- ── 底部：開啟檔案按鈕 ── -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#33000000"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp">
+
+            <Button
+                android:id="@+id/btnOpenFile"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="📂  從裝置選擇圖片或影片"
+                android:textColor="#FFFFFFFF"
+                android:background="@drawable/bg_open_file_btn"
+                android:textSize="16sp"
+                android:paddingStart="28dp"
+                android:paddingEnd="28dp"
+                android:focusable="true"
+                android:elevation="4dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

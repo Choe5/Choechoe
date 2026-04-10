@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ArcFlow TV Launcher</string>
+    <string name="menu_video_app">影片APP</string>
+    <string name="menu_music_app">音樂APP</string>
+    <string name="menu_all_apps">全部應用</string>
+    <string name="menu_settings">設定</string>
+    <string name="menu_collapse">收起</string>
+    <string name="menu_about">關於</string>
+</resources>
